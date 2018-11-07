@@ -2,10 +2,10 @@
 
 <h1>Users</h1>
 
-<table>
+<table style="margin: 0 auto;">
   <thead>
-    <tr>
-      <th>Name</th>
+    <tr style="color: white;">
+      <th>Name&nbsp;&nbsp;</th>
       <th>Email</th>
       <th colspan="3"></th>
     </tr>
@@ -13,7 +13,7 @@
 
   <tbody>
     <% @users.each do |user| %>
-      <tr>
+      <tr style="color: wheat;">
         <td><%= user.name %></td>
         <td><%= user.email %></td>
         <td><%= link_to 'Show', user %></td>

@@ -1,13 +1,113 @@
-<div class="center jumbotron">
-  <h1>Welcome to the Sample App</h1>
+<%= content_tag(:div, id: "screen") do %>
+	<%= link_to image_tag("signup.png", alt: "Sign Up"), signup_path, :class => "signup" %>
+	
+	<div id="newversion">
+		<%= link_to image_tag("ror.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
+	</div>
+	
+	<div id="intro">
+		<h1 id="title">
+			<span id="title-line1" class="title-line">Robust</span>
+			<span id="title-line2" class="title-line">Rapid</span>
+			<span id="title-line3" class="title-line">Rails</span>
+		</h1>
+	</div>
 
-  <h2>
-    This is the home page for the
-    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
+	<div id="title-info">
+		<p><br /></p>
+		<p class="credit">powered by <a href="#">Robust Rapid Rails</a></p>
+		<p class="credit">
+			created by <a href="#">Haziq Razak</a>
+		</p>
+		<p class="credit">
+			Email: <a href="mailto:haziqrazac@gmail.com">Haziq Razak</a>
+		</p>
+	</div>
+<% end %>
+<%= content_tag(:div, id: "showcase") do %>
+	<h1>Showcase</h1>
+	<p>Check out these my great websites</p>
+	<div class="gallery clearfix">
+		<figure>
+			<%= link_to image_tag("smithcollective.jpg", alt: "One-big-happy family"), 'https://www.smithcollective.com.au' %>
+			<figcaption>One - Big - Happy Family</figcaption>
+		</figure>
+		<figure>
+			<%= link_to image_tag("roastaroach.jpg", alt: "Know a cockroach supporter?"), 'https://roastaroach.com.au' %>
+			<figcaption>Cockroach supporter<br /></figcaption>
+		</figure>
+		<figure>
+			<%= link_to image_tag("cartegraph.jpg", alt: "High Performance Government"), 'https://www.cartegraph.com' %>
+			<figcaption>High Performance</figcaption>
+		</figure>
+		<figure>
+			<%= link_to image_tag("getreadynow.jpg", alt: "Give a Gift"), 'https://www.getreadynow.com' %>
+			<figcaption>Give a Gift</figcaption>
+		</figure>
+		<figure>
+			<%= link_to image_tag("diyshop.jpg", alt: "Happy Customers"), 'https://diyshop.co.za' %>
+			<figcaption>Happy Customers</figcaption>
+		</figure>
+		<figure>
+			<%= link_to image_tag("cosign.jpg", alt: "Make your photos shoppable"), 'https://www.cosign.co' %>
+			<figcaption>Your photos shoppable</figcaption>
+		</figure>
+		<figure>
+			<%= link_to image_tag("coloratour.jpg", alt: "Why Travel With Us?"), 'https://www.coloratour.com' %>
+			<figcaption>Why Travel With Us?</figcaption>
+		</figure>
+		<figure>
+			<%= link_to image_tag("findavenuenow.jpg", alt: "Venue Booking Made Easy"), 'http://findavenuenow.com' %>
+			<figcaption>Venue Booking Made Easy</figcaption>
+		</figure>
+		<figure>
+			<%= link_to image_tag("pursuefitness.jpg", alt: "Pursue Fitness"), 'https://www.pursuefitness.co.uk' %>
+			<figcaption>Pursue Fitness</figcaption>
+		</figure>
+	</div>
+<% end %>
+<%= content_tag(:div, id: "effect") do %>
 
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-</div>
+	<div id="content-wrapper">
 
-<%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
+		<div id="examples-1">
+			<h2 id="fade-it">Fade It</h2>
+			<h2 id="fly-it">Fly It</h2>
+			<h2 id="spin-it">Spin It</h2>
+			<h2 id="scale-it">Scale It</h2>
+			<h2 id="smush-it">Smush It</h2>
+		</div>
+		
+		<div id="examples-pin">
+			<div id="pin-frame-pin" class="pin-frame"><h2>Pin It</h2></div>
+			<div id="pin-frame-slide" class="pin-frame"><h2>Slide It</h2></div>
+			<div id="pin-frame-wipe" class="pin-frame"><h2>Wipe It</h2></div>
+			<div id="pin-frame-bounce" class="pin-frame"><h2>Bounce It</h2></div>
+			<div id="pin-frame-color" class="pin-frame"><h2>Color It</h2></div>
+			<div id="pin-frame-unpin" class="pin-frame"><h2>Unpin It</h2></div>
+		</div>
+		
+		<div id="examples-2">
+			<h2 id="fling-it">Fling It</h2>
+			<h2 id="move-it">Move It</h2>
+		</div>
+
+		<div id="examples-parallax">
+			<h2 id="parallax-it">Bring It</h2>
+			<h2 id="parallax-it-left">Bring It</h2>
+			<h2 id="parallax-it-right">Bring It</h2>
+		</div>
+		
+		<h2 id="bring-it">Get It</h2>
+
+		<div id="howtouse">
+		<h1>I promise</h1>
+		<div id="caution">
+			<p class="disclaimer"><br/>Best Quality<br />Strict Time<br/>Limited Budget</p>
+		</div>
+
+		<div id="credits">
+			<h1>Thank you</h1>
+		</div>
+	</div>
+<% end %>
